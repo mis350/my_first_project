@@ -1,0 +1,35 @@
+<html>
+    <head></head>
+    <body>
+       <h1>hello</h1> <h3>{{ name|upper }}</h3>
+       {% if name == 'mohammed'%}
+       <p>
+       You got an FA, please leave
+        </p>
+       {% else %}
+       <p>
+       Welcome to mis35
+        </p>
+        {% endif %}
+        <p>You major is {{ major }}</p>
+        <p>Your gpa is {{ gpa }}</p>
+        <p>You will learn alot in this course</p>  
+        <p>Students in your class are:</p>
+        <ul>
+            {% for s in students %}
+            <li>{{ s|capfirst }}</li>
+            {% endfor %}
+        </ul>
+        <a href="http://google.com">This a link</a>    
+        
+        <form action="" method="GET">
+            <label for="name">What is your name? </label>
+            <input type="text" name="name">
+        
+
+            <input type=submit>
+
+          </form>
+
+    </body>
+</html>
